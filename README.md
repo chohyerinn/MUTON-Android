@@ -59,7 +59,7 @@ On Windows PowerShell:
 The app reads the active backend URL from the main MUTON repository:
 
 ```text
-https://raw.githubusercontent.com/Ai-pre/MUTON/server_main/backend_url.json
+https://raw.githubusercontent.com/Ai-pre/MUTON/refs/heads/server_main/backend_url.json
 ```
 
 The backend URL file points to the current Cloudflare Tunnel address. This keeps the Android app stable even when the server tunnel changes between demos.
@@ -102,7 +102,7 @@ MUTON-Android/
   app/
     src/main/java/com/example/myapplication/
       MainActivity.kt
-      OpenAiSummaryService.kt
+      OpenAiSummaryService.kt          server summary endpoint client; no embedded API key
       ConversationRecordStore.kt
       RecordDetailActivity.kt
       HomeActivity.kt
@@ -112,3 +112,7 @@ MUTON-Android/
   build.gradle.kts
   settings.gradle.kts
 ```
+
+## License
+
+This repository is currently shared for academic review and open-source release preparation. Add a formal license file before external reuse, redistribution, or commercial use.
