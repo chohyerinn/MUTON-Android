@@ -61,7 +61,7 @@ class MainActivity : BaseActivity() {
     companion object {
         private const val PERMISSION_REQUEST_CODE = 10
         private const val REMOTE_CONFIG_URL =
-            "https://raw.githubusercontent.com/Ai-pre/MUTON/server_main/backend_url.json"
+            "https://api.github.com/repos/Ai-pre/MUTON/contents/backend_url.json?ref=server_main"
         private const val TAG = "BodyCamApp"
         private const val ENDPOINT_VIDEO = "/process_video_chunk"
         private const val ENDPOINT_FAST_AUDIO = "/process_audio_chunk"
@@ -171,11 +171,13 @@ class MainActivity : BaseActivity() {
         }
 
         isConfigLoading = true
-        val requestUrl = "${REMOTE_CONFIG_URL}?t=${System.currentTimeMillis()}"
+        val separator = if (REMOTE_CONFIG_URL.contains("?")) "&" else "?"
+        val requestUrl = "$REMOTE_CONFIG_URL${separator}t=${System.currentTimeMillis()}"
         Log.d(TAG, "Fetching config: $requestUrl")
 
         val request = Request.Builder()
             .url(requestUrl)
+            .header("Accept", "application/vnd.github.raw")
             .get()
             .build()
 
