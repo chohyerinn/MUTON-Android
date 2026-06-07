@@ -579,11 +579,7 @@ class MainActivity : BaseActivity() {
                             }
                         } else {
                             Log.w(TAG, "Audio response had no transcript. body=$body")
-                            showAudioStatus(
-                                getString(R.string.audio_empty_transcript) +
-                                    "\n\n" +
-                                    getString(R.string.audio_debug_prefix, body.toDebugSnippet()),
-                            )
+                            showAudioStatus(getString(R.string.audio_empty_transcript))
                         }
                     } catch (e: Exception) {
                         Log.e(TAG, "Audio parse fail: ${e.message}")
