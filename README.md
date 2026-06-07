@@ -59,7 +59,7 @@ On Windows PowerShell:
 The app reads the active backend URL from the main MUTON repository:
 
 ```text
-https://raw.githubusercontent.com/Ai-pre/MUTON/refs/heads/server_main/backend_url.json
+https://raw.githubusercontent.com/Ai-pre/MUTON/server_main/backend_url.json
 ```
 
 The backend URL file points to the current Cloudflare Tunnel address. This keeps the Android app stable even when the server tunnel changes between demos.

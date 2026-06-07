@@ -61,7 +61,7 @@ class MainActivity : BaseActivity() {
     companion object {
         private const val PERMISSION_REQUEST_CODE = 10
         private const val REMOTE_CONFIG_URL =
-            "https://raw.githubusercontent.com/Ai-pre/MUTON/refs/heads/server_main/backend_url.json"
+            "https://raw.githubusercontent.com/Ai-pre/MUTON/server_main/backend_url.json"
         private const val TAG = "BodyCamApp"
         private const val ENDPOINT_VIDEO = "/process_video_chunk"
         private const val ENDPOINT_FAST_AUDIO = "/process_audio_chunk"
