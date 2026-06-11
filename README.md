@@ -1,6 +1,6 @@
 # MUTON-Android
 
-MUTON-Android is the Android client for MUTON, a real-time multimodal dialogue assistance system for hearing-impaired users. The app captures camera frames and microphone audio, streams them to the MUTON backend, and displays subtitles, visual emotion cues, and multimodal summaries in a mobile interface.
+MUTON-Android is the Android client for MUTON, a real-time omnimodal dialogue assistance system for hearing-impaired users. The app captures camera frames and microphone audio, streams them to the MUTON backend, and displays subtitles, visual emotion cues, and image/audio/text-based summaries in a mobile interface.
 
 ## Contents
 
